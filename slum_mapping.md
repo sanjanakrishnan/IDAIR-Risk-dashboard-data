@@ -20,24 +20,24 @@ Refer excel workbook MAPPED_Pune_slums_df.xlsx
 
 ## Method (refer to excel sheet)
 1. In sheet 1, using datameets prabhag shapefile and Mundhe (2019) slum shapefile, the prabhag that the centre of each slum settlement lies in was found, and the area of the prabhag has been found (using R)
-* In Mundhe (2019), there are 458 slum settlements that are marked
-* There were minor differences in the area of the slum identified (Shape_Area) and the area calculateed using R (slum_area_calc)
+  * In Mundhe (2019), there are 458 slum settlements that are marked
+  * There were minor differences in the area of the slum identified (Shape_Area) and the area calculateed using R (slum_area_calc)
 
 2. sheet 2.1 and 2.2 were created simultaneously and manually by referring to each other
-* 2.1 shows the slum wise infrastrastructure taken from the census- there are 358 slums as per census 2011
-* This is 100 settlements less than Dr.Mundhes mapping, hence, several of his settlements are not mapped on to the census data
-* Slums with a unique and same name in both the lists were first matched with each other- 246/358 settlements were matched this way
-* A pattern was observed while doing this, by matching with Dr.Mundhes data it was observed that all the slums in the census were arranged by ward even though the ward was not mentioned
-* Using this slums with similar names and google map checks were matched with 'Reasonable confidence'. This included 16/358 settlemets
-* 25/358 settlements in the census were matched to just 8 shapefiles. This is because the census showed multiple slums in the same locaton, but Dr.Mundhes shapefiles identified just a few in the same location. This could be possible if there were multiple settlements earlier which were later merged into one
-* 2/358 slums in the census had multiple matches, and an aproximate location close to the original in the same ward was selected
-* 70/358 settlements were matched by considering a huge approximation. This was still done by following the reasonable assumption that sequential slums in the censes fall in the same ward, however since there is no way to check it, it was marked as a 'huge aroximation'
-* Based on this, the shapefiles were matched on to the census slum data (sheet 2.1)
+  * 2.1 shows the slum wise infrastrastructure taken from the census- there are 358 slums as per census 2011
+  * This is 100 settlements less than Dr.Mundhes mapping, hence, several of his settlements are not mapped on to the census data
+  * Slums with a unique and same name in both the lists were first matched with each other- 246/358 settlements were matched this way
+  * A pattern was observed while doing this, by matching with Dr.Mundhes data it was observed that all the slums in the census were arranged by ward even though the ward was not mentioned
+  * Using this slums with similar names and google map checks were matched with 'Reasonable confidence'. This included 16/358 settlemets
+  * 25/358 settlements in the census were matched to just 8 shapefiles. This is because the census showed multiple slums in the same locaton, but Dr.Mundhes shapefiles identified just a few in the same location. This could be possible if there were multiple settlements earlier which were later merged into one
+  * 2/358 slums in the census had multiple matches, and an aproximate location close to the original in the same ward was selected
+  * 70/358 settlements were matched by considering a huge approximation. This was still done by following the reasonable assumption that sequential slums in the censes fall in the same ward, however since there is no way to check it, it was marked as a 'huge aroximation'
+  * Based on this, the shapefiles were matched on to the census slum data (sheet 2.1)
 
 3. After this matching process was done, sheet 3.prabhag was created by summing the values in sheet 2.1 over each prabhag
-* ward population, SC/ST population was added to the prabhag data
-* For each prabhag the total area of slums, total population and HH in the slums was calculated
-* For each prabhag, the number of toilets and public taps and the per capita values were calculated
+  * ward population, SC/ST population was added to the prabhag data
+  * For each prabhag the total area of slums, total population and HH in the slums was calculated
+  * For each prabhag, the number of toilets and public taps and the per capita values were calculated
 
 ## Error calculation
 * For each prabhag, the population of slums that were matched with a "huge aproximation" in step 2 was found
