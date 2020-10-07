@@ -13,4 +13,4 @@ Data in "Data_29092020.xlsx"
 * age-death-cases- sheet contains age wise cases, deaths and CFR over time
 
 ## Slum Population
-Refer methodology in slummapping.md
+Refer methodology in [slum_mapping.md](https://github.com/sanjanakrishnan/IDAIR-Risk-dashboard-data/blob/main/slum_mapping)
