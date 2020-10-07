@@ -19,7 +19,7 @@ To understand the ward wise distribution of Water, Sanitation and Hygine (WASH) 
 Refer excel workbook MAPPED_Pune_slums_df.xlsx
 
 ## Method (refer to excel sheet)
-1, In sheet 1, using datameets prabhag shapefile and Mundhe (2019) slum shapefile, the prabhag that the centre of each slum settlement lies in was found, and the area of the prabhag has been found (using R)
+1. In sheet 1, using datameets prabhag shapefile and Mundhe (2019) slum shapefile, the prabhag that the centre of each slum settlement lies in was found, and the area of the prabhag has been found (using R)
 * In Mundhe (2019), there are 458 slum settlements that are marked
 * There were minor differences in the area of the slum identified (Shape_Area) and the area calculateed using R (slum_area_calc)
 
